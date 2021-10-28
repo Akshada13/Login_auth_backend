@@ -48,7 +48,7 @@ exports.forgotpassword = async (req, res, next) => {
     const resetToken = user.getResetPasswordToken();
     await user.save();
 
-    const resetUrl = `https://login-auth12.netlify.app/passwordreset/${resetToken}`;
+    const resetUrl = `https://login-auth123.netlify.app/passwordreset/${resetToken}`;
     const message = `
      <h1>You Have requested a password reset </h1>
      <p>Please go this link to reset your password</p>
